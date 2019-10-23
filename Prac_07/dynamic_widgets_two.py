@@ -22,9 +22,5 @@ class DynamicWidgetsAppTwo(App):
             temp_label = Label(text=name, id=name)
             self.root.ids.names_box.add_widget(temp_label)
 
-    def press_entry(self, instance):
-        name = instance.id
-        self.status_text = "{}".format(name)
-
 
 DynamicWidgetsAppTwo().run()
